@@ -14,6 +14,7 @@ import Carousell from './carouselslide'
 import Services from './services'
 import Avatars from './avatarr'
 import { Button } from '../ui/button'
+import { IoCall } from 'react-icons/io5'
         
 
 const SubNav = () => {
@@ -70,7 +71,8 @@ const SubNav = () => {
                 
                 <p>We Provide reliable and secure gateway payment services for businesses of all sizes. With our cutting-edge technology and 24/7 customer support, you can easily accept payments from customers all over the world.</p></div>
                 
-                <div className='pt-10 ml-17'><Button className='bg-primary rounded-3xl p-6 text-white font-bold'>Get Started</Button>
+                <div className='pt-10 ml-17 flex gap-x-2'><Button className='bg-primary rounded-3xl p-6 text-white font-bold text-[20px]'>Get Started</Button>
+                <Button className='bg-white rounded-3xl p-6 text-black text-[20px] font-bold'><div className='flex gap-x-2'><IoCall  className='mt-2' style={{fontSize:"25px"}}/><p>(00) 123 456 789</p></div></Button>
                     </div>
                     </div>
             </div>
