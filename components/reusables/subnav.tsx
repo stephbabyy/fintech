@@ -76,6 +76,10 @@ const SubNav = () => {
                     </div>
                     </div>
             </div>
+            <div className=' flex flex-col items-center justify-center'>
+            <h1 className='text-center text-black text-[50px] font-bold pt-10 mt-4 '>Case Studies</h1>
+            <p className='text-center text-black text-[20px] font-bold  '>Exploring In-Depth and Inspiring Case Studies of Success Stories</p>
+            <Button className='text-black p-6  font-bold text-[20px]'>View Our Case Studies</Button></div>
 
 
 
