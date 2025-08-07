@@ -7,7 +7,7 @@ import { TiSocialLinkedinCircular, TiSocialTwitterCircular } from 'react-icons/t
 import { FaInstagram} from 'react-icons/fa'
 import { FaYoutube } from 'react-icons/fa6'
 import Image from 'next/image'
-
+import Link from 'next/link'
 import { NavigationMenuDemo } from './index'
 import { FaPhone } from 'react-icons/fa6'
 import Carousell from './carouselslide'   
@@ -15,6 +15,7 @@ import Services from './services'
 import Avatars from './avatarr'
 import { Button } from '../ui/button'
 import { IoCall } from 'react-icons/io5'
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
         
 
 const SubNav = () => {
@@ -64,9 +65,14 @@ const SubNav = () => {
                 <Services />
             </div>
 
-            <div className='pt-10 w-full flex'>
+            <div className='pt-16 w-full h-screen flex'>
                 <Image src="/images/mainimage.webp" alt="imagemain" width={700} height={100} className='w-1/2'></Image>
-                <div className='bg-[#e6e3e3] w-6/12'> <div className=' flex pt-10 pl-9 '> <div> <Avatars /></div><div> <p className='text-gray-600  text-[16px] font-bold'>Trusted By 50M+ people </p> <p className='text-gray-600 font-bold text-[16px]'>Around the globe</p></div></div>
+                <div className='bg-[#e6e3e3] w-6/12'>
+                 <div className=' flex mt-8 max-h-max '>
+                     <div> <Avatars/></div>
+                     <div> <p className='text-gray-600  text-[16px] font-bold'>Trusted By 50M+ people </p> <p className='text-gray-600 font-bold text-[16px]'>Around the globe</p>
+                 </div>
+                 </div>
                 <div className='ml-17'><p className='text-black text-[50px] font-bold flex-col pt-7'>Payment Gateway Services</p>
                 
                 <p>We Provide reliable and secure gateway payment services for businesses of all sizes. With our cutting-edge technology and 24/7 customer support, you can easily accept payments from customers all over the world.</p></div>
@@ -78,11 +84,26 @@ const SubNav = () => {
             </div>
             <div className=' flex flex-col items-center justify-center'>
             <h1 className='text-center text-black text-[50px] font-bold pt-10 mt-4 '>Case Studies</h1>
-            <p className='text-center text-black text-[20px] font-bold  '>Exploring In-Depth and Inspiring Case Studies of Success Stories</p>
-            <Button className='text-black p-6  font-bold text-[20px]'>View Our Case Studies</Button></div>
-
-
-
+            <p className='text-center text-black text-[15px]   '>Exploring In-Depth and Inspiring Case Studies of Success Stories</p>
+            
+           <Link href=""><p className='text-black hover:text-blue-600 text-[15px] font-bold flex gap-x-1'>View Our Case Studies<MdKeyboardDoubleArrowRight className='mt-1.5' />  </p></Link>
+            </div>
+<div className='flex w-full'>
+    <div>
+    <Image src="/images/pexels-1.jpg" alt="case1" width={320} height={100}></Image>
+    <p className='text-center text-white text-[15px] font-bold' style={{position:"relative", top:"10px", left:"10px"}}>Tomorrow</p>
+    </div>
+    <div>
+    <Image src="/images/pexels-2.jpg" alt="case2" width={320} height={100}></Image>
+    </div>
+    <div>
+    <Image src="/images/pexels-3.jpg" alt="case3" width={340} height={100}></Image>
+    </div>
+    <div>
+    <Image src="/images/pexels-4.jpg" alt="case4" width={320} height={100}></Image>
+    </div>
+    
+</div>
      </div>
   )
 }

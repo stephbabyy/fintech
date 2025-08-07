@@ -22,7 +22,7 @@ const First  =({ imageUrl, altText, text, text2, text3, text4, button }: { image
         <div className='flex'>
        <div style={{ position: 'relative',  height: '100%', width: '100%' }}>
       <Image
-        src={imageUrl="/images/imageSlider2.jpg"} 
+        src={imageUrl="/images/unsplashhhhh.jpg"} 
         alt={altText="image1"}
         width={100}
         height={100}

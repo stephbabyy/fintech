@@ -13,7 +13,7 @@ const Carousell = () => {
         {
             id:1,
             slide:First,
-            imageUrl:"/images/imageslider1.jpg",
+            imageUrl:"/upsplash.jpg",
             altText:"image1",
             text:"Empower Your Business With",
             text2:"Seemless Payments",
@@ -24,7 +24,7 @@ const Carousell = () => {
         {
             id:2,
             slide:Second,
-            imageUrl:"/images/imageSlider2.jpg",
+            imageUrl:"/images/unsplashhhhh.jpg",
             altText:"image2",
             text:"Empower Your Business With",
             text2:"Seemless Payments",
